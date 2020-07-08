@@ -25,6 +25,11 @@
     border-radius: 5px;
     border-color: green;
 }
+.reg button:disabled {
+
+    background-color:goldenrod;
+
+}
 
 @media (max-width: 500px) {
     .content {

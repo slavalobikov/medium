@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom'
 
@@ -14,16 +14,13 @@ const App = () => {
                 <TopBar />
                 <Routes />
             </Router>
-
         </div>
     )
 };
 
 ReactDOM.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    , document.getElementById('root')
 );
 
 
