@@ -1,0 +1,47 @@
+.h {
+    text-align: center;
+    color:darkslategrey;
+}
+
+.reg a {
+    color: green;
+    font-size: 20px;
+    font-family: Arial Narrow, sans-serif;
+
+}
+
+.reg {
+    text-align: center;
+    margin-top: 15px;
+}
+ .inp {
+     width:60%
+ }
+
+.reg button {
+    height: 40px;
+    width:100px;
+    background-color:greenyellow;
+    border-radius: 5px;
+    border-color: green;
+}
+
+@media (max-width: 500px) {
+    .content {
+        margin-top: 75px;
+    }
+    .inp {
+        width: 80%;
+        height: 30px;
+        border-radius: 7px;
+    }
+}
+@media (min-width: 500px) {
+    .inp {
+        width: 65%;
+        height: 40px;
+        border-radius: 7px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
