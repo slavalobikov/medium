@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Hooks/useFetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/authentication/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/authentication/Authentication.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/authentication/Authentication.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/authentication/Authentication.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +88,7 @@
       <workItem from="1594220289065" duration="462000" />
       <workItem from="1594220893860" duration="39000" />
       <workItem from="1594222070404" duration="1901000" />
-      <workItem from="1594238524015" duration="8106000" />
+      <workItem from="1594238524015" duration="12326000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -108,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594217419291</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="custom Hook (isFetching)">
+      <created>1594247575989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594247575989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,17 +120,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Header adaptive" />
     <MESSAGE value="auth without hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth without hooks" />
+    <MESSAGE value="custom Hook (isFetching)" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom Hook (isFetching)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594203271754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594217417182">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594247573227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594217417182" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594247573227" />
     <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594239609054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -152,10 +156,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594220185564" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594217426365">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594247586372">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594217426365" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594247586372" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594216953411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
