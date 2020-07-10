@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import {NavLink, Redirect} from "react-router-dom";
 
 import s from './Authentication.module.css'
 import useFetch from "../../Hooks/useFetch";
 import useLocalStorage from "../../Hooks/useLocalStorage";
+import {CurrentUserContext} from "../../context/currentUser";
 
 const Authentication = (props) => {
 
@@ -13,7 +14,7 @@ const Authentication = (props) => {
     const descriptionLink = isLogin
         ? <NavLink to={'/register'}>Нету аккаунта? Зарегистрируйтесь!</NavLink>
         : <NavLink to={'/login'}>У вас уже есть аккаунт?</NavLink>;
-    const apiURL = isLogin ? 'users/login': 'users';
+    const apiURL = isLogin ? 'users/login' : 'users';
     const buttonText = isLogin ? 'Войти' : 'Зарегистрироваться';
 
     const [email, setEmail] = useState('');
@@ -21,29 +22,36 @@ const Authentication = (props) => {
     const [username, setUsername] = useState('');
     const [isSuccessfulSubmit, setIsSuccessfulSubmit] = useState(false);
 
-    const [{response, isLoading/*, error*/}, doFetch] = useFetch(apiURL);
-    const [token, setToken] = useLocalStorage('token');
+    const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
+    const [/*token*/, setToken] = useLocalStorage('token');
+    const [/*currentUserState*/, setCurrentUserState] = useContext(CurrentUserContext);
 
-    console.log(token);
+console.log(error);
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-    const user = isLogin ? {email, password} : {email, password, username}
-    doFetch({
-        method: 'post',
-        data: {
-            user
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const user = isLogin ? {email, password} : {email, password, username};
+        doFetch({
+            method: 'post',
+            data: {
+                user
+            }
+        })
+    };
+
+    useEffect(() => {
+        if (!response) {
+            return
         }
-    })
-};
-
-useEffect(() => {
-    if (!response ) {
-        return
-    }
-    setToken(response.user.token);
-    setIsSuccessfulSubmit(true);
-},[response, setToken]);
+        setToken(response.user.token);
+        setIsSuccessfulSubmit(true);
+        setCurrentUserState(state => ({
+            ...state,
+            isLoggedIn: true,
+            isLoading:false,
+            currentUser: response.user
+        }))
+    }, [response, setToken]);
     /*useEffect(() => {
         if (!isSubmitting) {
           return
@@ -74,14 +82,23 @@ useEffect(() => {
             <div className={s.reg}>{descriptionLink}</div>
             <form>
                 {!isLogin &&
-                    <div className={s.reg}><input className={s.inp} type="text" placeholder={'Имя пользователя'}
-                        value={username} onChange={e => setUsername(e.currentTarget.value)}/></div>
+                <div className={s.reg}>
+                    {error && <div>{error.errors.username}</div>}
+                    <input className={s.inp} type="text" placeholder={'Имя пользователя'}
+                                              value={username} onChange={e => setUsername(e.currentTarget.value)}/>
+                </div>
                 }
-                <div className={s.reg}><input type={'email'} className={s.inp} placeholder={'Почта'}
-                    value={email} onChange={e => setEmail(e.target.value)}/></div>
-                <div className={s.reg}><input type={'password'} className={s.inp} placeholder={'Пароль'}
-                    value={password} onChange={e => setPassword(e.target.value)}/></div>
-                <div className={s.reg}><button onClick={handleSubmit} disabled={isLoading}>{buttonText}</button></div>
+                <div className={s.reg}>
+                    {error && <div>{error.errors.email || 'Логин или пароль не подходят'}</div>}
+                    <input type={'email'} className={s.inp} placeholder={'Почта'}
+                                              value={email} onChange={e => setEmail(e.target.value)}/></div>
+                <div className={s.reg}>
+                    {error && <div>{error.errors.password}</div>}
+                    <input type={'password'} className={s.inp} placeholder={'Пароль'}
+                                              value={password} onChange={e => setPassword(e.target.value)}/></div>
+                <div className={s.reg}>
+                    <button onClick={handleSubmit} disabled={isLoading}>{buttonText}</button>
+                </div>
             </form>
         </div>
     )
