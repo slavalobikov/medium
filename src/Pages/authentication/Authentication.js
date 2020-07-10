@@ -3,6 +3,7 @@ import {NavLink, Redirect} from "react-router-dom";
 
 import s from './Authentication.module.css'
 import useFetch from "../../Hooks/useFetch";
+import useLocalStorage from "../../Hooks/useLocalStorage";
 
 const Authentication = (props) => {
 
@@ -19,12 +20,11 @@ const Authentication = (props) => {
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
     const [isSuccessfulSubmit, setIsSuccessfulSubmit] = useState(false);
-    //const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
-/*
-    console.log('dfdff',response,isLoading,error);
-*/
+    const [{response, isLoading/*, error*/}, doFetch] = useFetch(apiURL);
+    const [token, setToken] = useLocalStorage('token');
+
+    console.log(token);
 
 const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,9 +41,9 @@ useEffect(() => {
     if (!response ) {
         return
     }
-    localStorage.setItem('token', response.user.token);
+    setToken(response.user.token);
     setIsSuccessfulSubmit(true);
-}, [response]);
+},[response, setToken]);
     /*useEffect(() => {
         if (!isSubmitting) {
           return

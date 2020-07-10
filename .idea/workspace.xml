@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
+    <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="autorization and registration with API">
+      <change afterPath="$PROJECT_DIR$/src/Hooks/useLocalStorage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useFetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/authentication/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/authentication/Authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/authentication/Authentication.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/authentication/Authentication.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React/Rect hook/mediumclone_hooks-5-rendering-login-page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React/Rect hook/mediumclone_hooks-38-use-effect-callback" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,7 +91,7 @@
       <workItem from="1594220289065" duration="462000" />
       <workItem from="1594220893860" duration="39000" />
       <workItem from="1594222070404" duration="1901000" />
-      <workItem from="1594238524015" duration="12326000" />
+      <workItem from="1594238524015" duration="18225000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -111,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594247575989</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="autorization and registration with API">
+      <created>1594297957671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594297957671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,21 +131,26 @@
     <MESSAGE value="Header adaptive" />
     <MESSAGE value="auth without hooks" />
     <MESSAGE value="custom Hook (isFetching)" />
-    <option name="LAST_COMMIT_MESSAGE" value="custom Hook (isFetching)" />
+    <MESSAGE value="autorization and registration with API" />
+    <option name="LAST_COMMIT_MESSAGE" value="autorization and registration with API" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594300610800">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1594300610800" />
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594203271754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594247573227">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594315943334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594247573227" />
-    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594239609054">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594315943334" />
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594315896171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594239609054" />
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594315896171" />
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1594213470478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -156,10 +171,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594220185564" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594247586372">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594298888285">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594247586372" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594298888285" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594216953411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
