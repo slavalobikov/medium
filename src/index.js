@@ -6,21 +6,24 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import Routes from './routes'
 import TopBar from "./Components/TopBar/TopBar";
 import {CurrentUserProvider} from "./context/currentUser";
+import CurrentUserChecker from "./Components/CurrentUserChecker/CurrentUserChecker";
 
 
 const App = () => {
     return (
         <CurrentUserProvider>
-            <Router>
-                <TopBar />
-                <Routes />
-            </Router>
+            <CurrentUserChecker>
+                <Router>
+                    <TopBar/>
+                    <Routes/>
+                </Router>
+            </CurrentUserChecker>
         </CurrentUserProvider>
     )
 };
 
 ReactDOM.render(
-    <App />
+    <App/>
     , document.getElementById('root')
 );
 

@@ -24,9 +24,9 @@ const Authentication = (props) => {
 
     const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
     const [/*token*/, setToken] = useLocalStorage('token');
-    const [/*currentUserState*/, setCurrentUserState] = useContext(CurrentUserContext);
+    const [currentUserState, setCurrentUserState] = useContext(CurrentUserContext);
 
-console.log(error);
+console.log(currentUserState);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -51,7 +51,7 @@ console.log(error);
             isLoading:false,
             currentUser: response.user
         }))
-    }, [response, setToken]);
+    }, [response, setToken, setCurrentUserState]);
     /*useEffect(() => {
         if (!isSubmitting) {
           return

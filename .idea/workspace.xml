@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/context/currentUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CurrentUserChecker/CurrentUserChecker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/TopBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/TopBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useFetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/authentication/Authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/authentication/Authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/authentication/Authentication.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/authentication/Authentication.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../socialweb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React/Rect hook/mediumclone_hooks-38-use-effect-callback" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,11 +40,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\medium\src\Pages\authentication" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\medium\src\Components\TopBar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\medium\src\Pages\authentication" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -90,7 +92,8 @@
       <workItem from="1594220289065" duration="462000" />
       <workItem from="1594220893860" duration="39000" />
       <workItem from="1594222070404" duration="1901000" />
-      <workItem from="1594238524015" duration="23472000" />
+      <workItem from="1594238524015" duration="24975000" />
+      <workItem from="1594555211513" duration="6463000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -127,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594393286197</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="validation">
+      <created>1594402685557</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594402685557</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +149,8 @@
     <MESSAGE value="custom Hook (isFetching)" />
     <MESSAGE value="autorization and registration with API" />
     <MESSAGE value="no error" />
-    <option name="LAST_COMMIT_MESSAGE" value="no error" />
+    <MESSAGE value="validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594300610800">
@@ -154,10 +165,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594402683172" />
-    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594396258828">
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594555281385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594396258828" />
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594555281385" />
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1594213470478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -178,10 +189,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594220185564" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594393292124">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594402687634">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594393292124" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594402687634" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594216953411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
