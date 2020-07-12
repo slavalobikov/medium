@@ -1,0 +1,18 @@
+.column {
+    color: red;
+}
+
+.author {
+    display: grid;
+}
+.author .img {
+    grid-column: 1;
+}
+
+.author .authName {
+    grid-column: 1/2;
+}
+
+.author span {
+    grid-column: 1/2;
+}
