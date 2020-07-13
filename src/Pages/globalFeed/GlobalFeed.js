@@ -4,6 +4,9 @@ import useFetch from "../../Hooks/useFetch";
 import {getPaginator, limit} from "../../utils";
 import {stringify} from "query-string";
 import Paginator from "../../common/Paginator/Paginator";
+import PopularTags from "../../Components/PopularTags/PopularTags";
+import Loading from "../../common/Loading/Loading";
+import ErrorMessage from "../../common/ErrorMessage/Error-message";
 
 const GlobalFeed = ({location, match}) => {
 
@@ -24,8 +27,8 @@ const GlobalFeed = ({location, match}) => {
     }, [doFetch, currentPage]);
 
     return <div>
-        {isLoading && <div>Загрузка...</div>}
-        {error && <div>Произошла ошибка</div>}
+        {isLoading && <Loading/>}
+        {error && <ErrorMessage />}
         {!isLoading && response && (
             <Fragment>
                 <Paginator
@@ -36,8 +39,9 @@ const GlobalFeed = ({location, match}) => {
                 />
 
                 <Feed articles={response.articles} pageSize={offset} response={response}  limit={limit} offset={offset} />
-
+                <PopularTags />
             </Fragment>
+
         )}
     </div>
 };
