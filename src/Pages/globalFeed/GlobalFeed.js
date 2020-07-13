@@ -1,24 +1,45 @@
-import React, {useEffect} from "react"
+import React, {Fragment, useEffect} from "react"
 import Feed from "../../Components/Feed/Feed";
 import useFetch from "../../Hooks/useFetch";
+import {getPaginator, limit} from "../../utils";
+import {stringify} from "query-string";
+import Paginator from "../../common/Paginator/Paginator";
 
-const GlobalFeed = () => {
+const GlobalFeed = ({location, match}) => {
 
-    const apiURL = 'articles?limit=10&offset=0';
+    const {offset, currentPage} = getPaginator(location.search);
+    console.log('ff', offset, currentPage);
+
+    const stringyfiedParams = stringify({
+        limit,
+        offset
+    });
+    const apiURL = `articles?${stringyfiedParams}`;
+    const currentUrl = match.url;
     const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
 
-    console.log(response)
+    //console.log(response)
     useEffect(() => {
         doFetch()
-    }, [doFetch])
+    }, [doFetch, currentPage]);
 
     return <div>
         {isLoading && <div>Загрузка...</div>}
         {error && <div>Произошла ошибка</div>}
         {!isLoading && response && (
-            <Feed articles={response.articles} />
+            <Fragment>
+                <Paginator
+                    total={response.articlesCount}
+                    limit={limit}
+                    url={currentUrl}
+                    currentPage={currentPage}
+                />
+
+                <Feed articles={response.articles} pageSize={offset} response={response}  limit={limit} offset={offset} />
+
+            </Fragment>
         )}
-        </div>
+    </div>
 };
 
 export default GlobalFeed;

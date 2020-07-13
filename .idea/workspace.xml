@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Paginator/Paginator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Paginator/Paginator.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/article/Article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Feed/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Feed" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React/Rect hook/mediumclone_hooks-23-implementing-pagination" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,6 +51,7 @@
       <recent name="D:\medium\src\Components\TopBar" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\medium\src\common" />
       <recent name="D:\medium\src\Components\Feed" />
       <recent name="D:\medium\src\Pages\authentication" />
     </key>
@@ -92,7 +102,10 @@
       <workItem from="1594220893860" duration="39000" />
       <workItem from="1594222070404" duration="1901000" />
       <workItem from="1594238524015" duration="24975000" />
-      <workItem from="1594555211513" duration="10081000" />
+      <workItem from="1594555211513" duration="10612000" />
+      <workItem from="1594567306633" duration="4810000" />
+      <workItem from="1594572326627" duration="2116000" />
+      <workItem from="1594654236646" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -143,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594561804584</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Post without CSS">
+      <created>1594566962461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594566962461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +177,8 @@
     <MESSAGE value="no error" />
     <MESSAGE value="validation" />
     <MESSAGE value="topBar with Autorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="topBar with Autorization" />
+    <MESSAGE value="Post without CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Post without CSS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594300610800">
@@ -168,38 +189,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594561802132">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594566960332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594561802132" />
-    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594555281385">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594566960332" />
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594659509843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594555281385" />
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594659509843" />
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1594213470478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1594213470478" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594220185565">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594567253138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594220185565" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1594220185564">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1594567253138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594220185564" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1594220185564">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1594567253138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594220185564" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1594220185564">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1594567253138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594220185564" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594561809279">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594566986229">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594561809279" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594566986229" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594216953411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
