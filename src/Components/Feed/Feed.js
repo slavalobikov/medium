@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import s from './Feed.module.css'
+import TagList from "../../common/TagList/TagList";
 
 
 const Feed = ({articles, pageSize, response, limit, offset}) => {
@@ -26,8 +27,11 @@ const Feed = ({articles, pageSize, response, limit, offset}) => {
                             <h1>{article.title}</h1>
                             <p>{article.description}</p>
                             <span>Читать подробнее..</span>
-                            {article.tagList.map(tag => (
-                                <span key={tag}>{tag}</span>))}
+                        {/*    {article.tagList.map(tag => (
+                                <span key={tag}>{tag}</span>))}*/}
+
+                                <TagList tags={article.tagList} />
+
                         </NavLink>
                     </div>
                 </div>

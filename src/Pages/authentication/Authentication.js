@@ -24,9 +24,10 @@ const Authentication = (props) => {
 
     const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
     const [/*token*/, setToken] = useLocalStorage('token');
+/*
     const [currentUserState, setCurrentUserState] = useContext(CurrentUserContext);
-
-console.log(currentUserState);
+*/
+    const [, dispatch] = useContext(CurrentUserContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -45,13 +46,14 @@ console.log(currentUserState);
         }
         setToken(response.user.token);
         setIsSuccessfulSubmit(true);
-        setCurrentUserState(state => ({
+        dispatch({type: 'SET_AUTHORIZED', payload: response.user})
+/*        setCurrentUserState(state => ({ // До использования useReducer
             ...state,
             isLoggedIn: true,
             isLoading:false,
             currentUser: response.user
-        }))
-    }, [response, setToken, setCurrentUserState]);
+        }))*/
+    }, [response, setToken, dispatch]);
     /*useEffect(() => {
         if (!isSubmitting) {
           return
@@ -72,7 +74,7 @@ console.log(currentUserState);
         setIsSubmitting(false);
 
     })
-    });*/
+    });*/ // Мб пригодится в Магазе
     if (isSuccessfulSubmit) {
         return <Redirect to={'/'}/>
     }
