@@ -9,14 +9,17 @@ import Loading from "../../common/Loading/Loading";
 import ErrorMessage from "../../common/ErrorMessage/Error-message";
 import FeedToggler from "../../Components/FeedToggle/FeedToggler";
 
-const GlobalFeed = ({location, match}) => {
+const TagFeed = ({location, match}) => {
+
+    const tagName = match.params.slug;
 
     const {offset, currentPage} = getPaginator(location.search);
     console.log('ff', offset, currentPage);
 
     const stringyfiedParams = stringify({
         limit,
-        offset
+        offset,
+        tag: tagName
     });
     const apiURL = `articles?${stringyfiedParams}`;
     const currentUrl = match.url;
@@ -25,14 +28,14 @@ const GlobalFeed = ({location, match}) => {
     //console.log(response)
     useEffect(() => {
         doFetch()
-    }, [doFetch, currentPage]);
+    }, [doFetch, currentPage, tagName]);
 
     return <div>
         {isLoading && <Loading/>}
         {error && <ErrorMessage />}
         {!isLoading && response && (
             <Fragment>
-                <FeedToggler tagName={'foo'} />
+                <FeedToggler tagName={tagName} />
                 <Paginator
                     total={response.articlesCount}
                     limit={limit}
@@ -48,4 +51,4 @@ const GlobalFeed = ({location, match}) => {
     </div>
 };
 
-export default GlobalFeed;
+export default TagFeed;

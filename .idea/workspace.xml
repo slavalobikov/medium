@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/PopularTags/PopularTags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/ErrorMessage/Error-message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Loading/Loading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/FeedToggle/FeedToggler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/TagFeed/TagFeed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/YourFeed/YourFeed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Feed/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React/Rect hook/mediumclone_hooks-23-implementing-pagination" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,13 +47,14 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\medium\src\Components\TopBar" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\medium\src\Pages" />
       <recent name="D:\medium\src\common" />
       <recent name="D:\medium\src\Components\Feed" />
       <recent name="D:\medium\src\Pages\authentication" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\medium\src\Components\TopBar" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -103,7 +106,8 @@
       <workItem from="1594555211513" duration="10612000" />
       <workItem from="1594567306633" duration="4810000" />
       <workItem from="1594572326627" duration="2116000" />
-      <workItem from="1594654236646" duration="6179000" />
+      <workItem from="1594654236646" duration="7010000" />
+      <workItem from="1594902751741" duration="4144000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -168,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594660659530</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="PopularTags">
+      <created>1594663713758</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594663713758</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +195,8 @@
     <MESSAGE value="topBar with Autorization" />
     <MESSAGE value="Post without CSS" />
     <MESSAGE value="pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
+    <MESSAGE value="PopularTags" />
+    <option name="LAST_COMMIT_MESSAGE" value="PopularTags" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594663041970">
@@ -195,10 +207,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594660656754">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1594663711869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594660656754" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1594663711869" />
     <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594659509843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -223,13 +235,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594662458016">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1594663719318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594662458016" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594216953411">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594663719318" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594904583910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594216953411" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594904583910" />
   </component>
 </project>

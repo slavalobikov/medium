@@ -2,14 +2,12 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import s from './Feed.module.css'
-import Paginator from "../../common/Paginator/Paginator";
 
 
 const Feed = ({articles, pageSize, response, limit, offset}) => {
     return (
         <div>
-{/*            <Paginator pageSize={pageSize} total={response.articlesCount} limit={limit} url={'/'} currentPage={offset}
-            />*/}
+
             {articles.map((article, index) => (
                 <div key={index}>
                     <div className={s.author}>
