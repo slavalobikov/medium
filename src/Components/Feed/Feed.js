@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import s from './Feed.module.css'
 import TagList from "../../common/TagList/TagList";
+import AddToFavorites from "../AddToFavorite/AddToFavorite";
 
 
 const Feed = ({articles, pageSize, response, limit, offset}) => {
@@ -20,6 +21,10 @@ const Feed = ({articles, pageSize, response, limit, offset}) => {
                                 {article.author.username}
                             </NavLink>
                             <span>{article.createdAt}</span>
+                        </div>
+                        <div>
+                            <AddToFavorites isFavoritted={article.favorited} favoritesCount={article.favoritesCount}
+                                articleSlug={article.slug}/>
                         </div>
                     </div>
                     <div>
