@@ -10,6 +10,7 @@ import TagFeed from "./Pages/TagFeed/TagFeed";
 import YourFeed from "./Pages/YourFeed/YourFeed";
 import CreateArtikle from "./Pages/CreateArtikle/CreateArtikle";
 import EditArticle from "./Pages/EditArticle/EditArticle";
+import Settings from "./Pages/Settings/Settings";
 
 
 export default () => {
@@ -19,6 +20,7 @@ export default () => {
             <Route path={'/articles/new'} component={CreateArtikle} ></Route>
             <Route path={'/articles/:slug/edit'} component={EditArticle} ></Route>
             <Route path={'/feed'} component={YourFeed} ></Route>
+            <Route path={'/settings'} component={Settings} ></Route>
             <Route path={'/tags/:slug'} component={TagFeed}></Route>
             <Route path={'/login'} component={Authentication} ></Route>
             <Route path={'/register'} component={Authentication} ></Route>

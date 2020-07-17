@@ -25,6 +25,7 @@ const TopBar = () => {
             {currentUserState.isLoggedIn && (
                 <Fragment>
                     <NavLink activeClassName={s.active} className={s.hh} to={'/articles/new'} >Новый пост</NavLink>
+                    <NavLink activeClassName={s.active} className={s.hh} to={'/settings'} >Настройки</NavLink>
                     <NavLink activeClassName={s.active} className={s.hh}
                              to={`/profiles/${currentUserState.currentUser.username}`} >
                         <img src={currentUserState.currentUser.image
@@ -33,6 +34,7 @@ const TopBar = () => {
                         {'   '}
                         {currentUserState.currentUser.username}
                     </NavLink>
+
                 </Fragment>
             )}
 
