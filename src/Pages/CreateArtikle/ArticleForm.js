@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import ErrorMessage from "../../common/ErrorMessage/Error-message";
+
 
 const ArtikleForm = ({onSubmit, errors, initialValues}) => {
 
@@ -10,15 +12,31 @@ const ArtikleForm = ({onSubmit, errors, initialValues}) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        onSubmit({foo:'foo'});
-
+        const article = {
+            title,
+            body,
+            description,
+            tagList
+        };
+        onSubmit(article);
     };
+
+    useEffect( () => {
+        if (!initialValues) {
+            return
+        }
+        console.log('initialValues', initialValues);
+        setTitle(initialValues.title);
+        setBody(initialValues.body);
+        setDescription(initialValues.description);
+        setTagList(initialValues.tagList.join(' '));
+    }, [initialValues]);
 
 
     return <div>
         <div>
             <div>
-                BackEndErrorMessages
+                {errors &&  <ErrorMessage backendErrors={errors} />}
                 <form onSubmit={handleSubmit}>
                     <div>
                         <input type="text" value={title} placeholder={'Введите заголовок'}
