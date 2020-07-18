@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/UserProfile/UserProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/UserProfile/components/UserArticles/UserArticles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <workItem from="1594902751741" duration="12010000" />
       <workItem from="1594974200361" duration="1095000" />
       <workItem from="1594975772963" duration="21933000" />
-      <workItem from="1595086567069" duration="5722000" />
+      <workItem from="1595086567069" duration="6101000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595011450390</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Shop">
+      <created>1595098785617</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1595098785641</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +257,8 @@
     <MESSAGE value="Delete Article" />
     <MESSAGE value="likes" />
     <MESSAGE value="Logout and setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logout and setting" />
+    <MESSAGE value="Shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594920479648">
@@ -263,10 +269,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1595011448430">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1595098781592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595011448430" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595098781592" />
     <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1595098723591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -291,10 +297,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1595011467828">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1595098800183">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595011467828" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595098800183" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1595014583213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
