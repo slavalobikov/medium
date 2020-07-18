@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Settings/Settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/UserProfile/UserProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/UserProfile/components/UserArticles/UserArticles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/TopBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/currentUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/currentUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../balabala" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,7 +106,8 @@
       <workItem from="1594654236646" duration="7010000" />
       <workItem from="1594902751741" duration="12010000" />
       <workItem from="1594974200361" duration="1095000" />
-      <workItem from="1594975772963" duration="13104000" />
+      <workItem from="1594975772963" duration="21933000" />
+      <workItem from="1595086567069" duration="5722000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595007740928</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Logout and setting">
+      <created>1595011450390</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1595011450390</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +251,8 @@
     <MESSAGE value="Edit Article" />
     <MESSAGE value="Delete Article" />
     <MESSAGE value="likes" />
-    <option name="LAST_COMMIT_MESSAGE" value="likes" />
+    <MESSAGE value="Logout and setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logout and setting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594920479648">
@@ -255,14 +263,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1595007739442">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1595011448430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595007739442" />
-    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1594659509843">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1595011448430" />
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1595098723591">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594659509843" />
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595098723591" />
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1594213470478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -283,10 +291,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1595007745225">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1595011467828">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595007745225" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595011467828" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1595014583213">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595014583213" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594991312498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

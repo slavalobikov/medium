@@ -11,12 +11,15 @@ import YourFeed from "./Pages/YourFeed/YourFeed";
 import CreateArtikle from "./Pages/CreateArtikle/CreateArtikle";
 import EditArticle from "./Pages/EditArticle/EditArticle";
 import Settings from "./Pages/Settings/Settings";
+import UserProfile from "./Pages/UserProfile/UserProfile";
 
 
 export default () => {
     return(
         <Switch>
             <Route path={'/'} component={GlobalFeed} exact></Route>
+            <Route path={'/profile/:slug'} component={UserProfile} ></Route>
+            <Route path={'/profile/:slug/favorites'} component={UserProfile} ></Route>
             <Route path={'/articles/new'} component={CreateArtikle} ></Route>
             <Route path={'/articles/:slug/edit'} component={EditArticle} ></Route>
             <Route path={'/feed'} component={YourFeed} ></Route>
