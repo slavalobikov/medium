@@ -1,3 +1,10 @@
+.feedMost {
+    margin-top: 5px;
+}
+.feed {
+    border: aqua 5px double;
+}
+
 .column {
     color: red;
 }

@@ -10,10 +10,7 @@ const CurrentUserChecker = ({children}) => {
 
     useEffect(() => {
         if (!token) {
-/*            setCurrentUserState(state => ({
-                ...state,
-                isLoggedIn:false
-            }));*/
+
 dispatch({type: 'SET_UNAUTHORIZED', });
             return
         }
@@ -29,12 +26,7 @@ dispatch({type: 'SET_UNAUTHORIZED', });
         if (!response) {
             return
         }
-       /* setCurrentUserState(state => ({
-            ...state,
-            isLoggedIn:true,
-            isLoading: false,
-            currentUser: response.user
-        }))*/
+
        dispatch({type:'SET_AUTHORIZED', payload: response.user})
     }, [response, dispatch])
     return children

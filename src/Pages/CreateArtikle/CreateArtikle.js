@@ -21,7 +21,6 @@ const CreateArtikle = () => {
 
     };
     const handleSubmit = article => {
-        console.log(article);
         doFetch({
             method: 'post',
             data: {

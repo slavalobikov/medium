@@ -14,7 +14,6 @@ const TagFeed = ({location, match}) => {
     const tagName = match.params.slug;
 
     const {offset, currentPage} = getPaginator(location.search);
-    console.log('ff', offset, currentPage);
 
     const stringyfiedParams = stringify({
         limit,
@@ -25,7 +24,6 @@ const TagFeed = ({location, match}) => {
     const currentUrl = match.url;
     const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
 
-    //console.log(response)
     useEffect(() => {
         doFetch()
     }, [doFetch, currentPage, tagName]);

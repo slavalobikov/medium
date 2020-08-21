@@ -1,4 +1,7 @@
 import React, {Fragment, useEffect} from "react"
+
+import s from './GlobalFeed.module.css'
+
 import Feed from "../../Components/Feed/Feed";
 import useFetch from "../../Hooks/useFetch";
 import {getPaginator, limit} from "../../utils";
@@ -12,7 +15,6 @@ import FeedToggler from "../../Components/FeedToggle/FeedToggler";
 const GlobalFeed = ({location, match}) => {
 
     const {offset, currentPage} = getPaginator(location.search);
-    console.log('ff', offset, currentPage);
 
     const stringyfiedParams = stringify({
         limit,
@@ -22,12 +24,11 @@ const GlobalFeed = ({location, match}) => {
     const currentUrl = match.url;
     const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
 
-    //console.log(response)
     useEffect(() => {
         doFetch()
     }, [doFetch, currentPage]);
 
-    return <div>
+    return <div className={s.GlobalFeed}>
         {isLoading && <Loading/>}
         {error && <ErrorMessage />}
         {!isLoading && response && (

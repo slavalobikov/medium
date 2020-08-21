@@ -25,7 +25,6 @@ const ArtikleForm = ({onSubmit, errors, initialValues}) => {
         if (!initialValues) {
             return
         }
-        console.log('initialValues', initialValues);
         setTitle(initialValues.title);
         setBody(initialValues.body);
         setDescription(initialValues.description);
