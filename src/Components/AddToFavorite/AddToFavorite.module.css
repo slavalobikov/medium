@@ -1,0 +1,21 @@
+.img {
+    width:25px;
+    height:25px;
+}
+.like {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dima {
+    background-color: greenyellow;
+
+}

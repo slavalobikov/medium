@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../balabala/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../balabala/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/AddToFavorite/AddToFavorite.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CurrentUserChecker/CurrentUserChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CurrentUserChecker/CurrentUserChecker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddToFavorite/AddToFavorite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddToFavorite/AddToFavorite.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Feed/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Feed/Feed.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/CreateArtikle/ArticleForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/CreateArtikle/ArticleForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/CreateArtikle/CreateArtikle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/CreateArtikle/CreateArtikle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/TagFeed/TagFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/TagFeed/TagFeed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Paginator/Paginator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Paginator/Paginator.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Paginator/Paginator.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/YourFeed/YourFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/YourFeed/YourFeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/article/Article.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../socialweb" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,11 +51,11 @@
       <recent name="D:\medium\src\Components\TopBar" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\medium\src\Components\AddToFavorite" />
+      <recent name="D:\medium\src\Pages\article" />
       <recent name="D:\medium\src\Pages\globalFeed" />
       <recent name="D:\medium\src\Pages" />
       <recent name="D:\medium\src\common" />
-      <recent name="D:\medium\src\Components\Feed" />
-      <recent name="D:\medium\src\Pages\authentication" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -123,7 +118,8 @@
       <workItem from="1596717406028" duration="2647000" />
       <workItem from="1597580540220" duration="41000" />
       <workItem from="1597755418619" duration="3795000" />
-      <workItem from="1598011112536" duration="826000" />
+      <workItem from="1598011112536" duration="2001000" />
+      <workItem from="1598024140318" duration="5357000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -258,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595099147826</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="paginator">
+      <created>1598012149009</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1598012149009</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +286,8 @@
     <MESSAGE value="likes" />
     <MESSAGE value="Logout and setting" />
     <MESSAGE value="Shop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shop" />
+    <MESSAGE value="paginator" />
+    <option name="LAST_COMMIT_MESSAGE" value="paginator" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594920479648">
@@ -294,14 +298,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1598012138066">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1598102791541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598012138066" />
-    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1597580578300">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598102791541" />
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1598102271565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597580578300" />
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598102271565" />
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1594213470478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -322,10 +326,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1595099153901">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1598012167762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1595099153901" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598012167762" />
     <state x="489" y="17" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597763806237">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

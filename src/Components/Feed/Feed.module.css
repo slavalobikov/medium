@@ -3,6 +3,7 @@
 }
 .feed {
     border: aqua 5px double;
+    text-align: center;
 }
 
 .column {
@@ -22,4 +23,24 @@
 
 .author span {
     grid-column: 1/2;
+}
+
+.ava {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px gold double;
+}
+.ava:hover {
+    border: 5px red double;
+}
+
+.createdAt {
+    float: right;
+}
+
+.username {
+    margin-left:180px;
+    font-size: 24px;
+    color: darkorange;
 }

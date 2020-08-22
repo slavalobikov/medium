@@ -25,7 +25,6 @@ const YourFeed = ({location, match}) => {
     const currentUrl = match.url;
     const [{response, isLoading, error}, doFetch] = useFetch(apiURL);
 
-    //console.log(response)
     useEffect(() => {
         doFetch()
     }, [doFetch, currentPage, tagName]);

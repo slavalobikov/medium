@@ -5,6 +5,7 @@ import Loading from "../../common/Loading/Loading";
 import TagList from "../../common/TagList/TagList";
 import {CurrentUserContext} from "../../context/currentUser";
 import Redirect from "react-router-dom/es/Redirect";
+import s from './Article.module.css'
 
 const Article = (props) => {
 
@@ -46,10 +47,10 @@ const Article = (props) => {
         <div>Baner xD
             {!isLoading && response && (
                 <div>
-                    <h1>{response.article.title}</h1>
+                    <h1 className={s.dima}>{response.article.title}</h1>
                     <div>
                         <NavLink to={`/profile/${response.article.author.username}`}>
-                            <img src={response.article.author.image} alt=" "/>
+                            <img className={s.ava} src={response.article.author.image} alt=" "/>
                         </NavLink>
                         <div>
                             <NavLink to={`/profile/${response.article.author.username}`}>
