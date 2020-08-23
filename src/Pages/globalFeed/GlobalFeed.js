@@ -33,16 +33,18 @@ const GlobalFeed = ({location, match}) => {
         {error && <ErrorMessage />}
         {!isLoading && response && (
             <Fragment>
-                <FeedToggler tagName={'foo'} />
+                <FeedToggler />
                 <Paginator
                     total={response.articlesCount}
                     limit={limit}
                     url={currentUrl}
                     currentPage={currentPage}
                 />
+                <div className={s.grid}>
+                    <Feed articles={response.articles} pageSize={offset} response={response}  limit={limit} offset={offset} />
+                    <PopularTags />
+                </div>
 
-                <Feed articles={response.articles} pageSize={offset} response={response}  limit={limit} offset={offset} />
-                <PopularTags />
             </Fragment>
 
         )}

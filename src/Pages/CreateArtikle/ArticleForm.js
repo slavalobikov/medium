@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import ErrorMessage from "../../common/ErrorMessage/Error-message";
 
+import s from './ArticleForm.module.css'
+
 
 const ArtikleForm = ({onSubmit, errors, initialValues}) => {
 
@@ -32,7 +34,7 @@ const ArtikleForm = ({onSubmit, errors, initialValues}) => {
     }, [initialValues]);
 
 
-    return <div>
+    return <div className={s.article}>
         <div>
             <div>
                 {errors &&  <ErrorMessage backendErrors={errors} />}
@@ -54,7 +56,7 @@ const ArtikleForm = ({onSubmit, errors, initialValues}) => {
                                onChange={(e) => setTagList(e.target.value)}/>
                     </div>
                     <div>
-                        <button type={'submit'}> dsfsdf</button>
+                        <button type={'submit'}> Отправить пост</button>
                     </div>
 
                 </form>

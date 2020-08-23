@@ -1,0 +1,16 @@
+.article {
+    text-align: center;
+}
+
+.article input {
+    margin-top: 15px;
+    width: 70%;
+}
+
+.article button {
+    margin-top: 15px;
+}
+.article button:hover {
+    background-color: wheat;
+    border: 1px greenyellow double;
+}

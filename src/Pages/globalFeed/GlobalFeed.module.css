@@ -6,3 +6,8 @@
     border: 2px red double;
     */
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}

@@ -2,13 +2,14 @@ import React, {useContext} from 'react';
 import {NavLink} from "react-router-dom";
 
 import {CurrentUserContext} from "../../context/currentUser";
+import s from './FeedToggler.module.css'
 
 const FeedToggler = ({tagName}) => {
 
     const [currentUserState] = useContext(CurrentUserContext);
 
     return (
-        <div>
+        <div className={s.FeedToggler}>
             { currentUserState.isLoggedIn &&
                 <NavLink to={'/feed'}>Your Feed</NavLink>
             }

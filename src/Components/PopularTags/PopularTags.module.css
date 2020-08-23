@@ -1,0 +1,18 @@
+.PopularTags {
+    height: 300px;
+    background-color: greenyellow;
+    border-radius: 25px;
+    margin: 15px;
+
+}
+
+.tag {
+    margin-left: 2px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

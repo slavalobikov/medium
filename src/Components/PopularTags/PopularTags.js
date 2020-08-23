@@ -3,10 +3,11 @@ import useFetch from "../../Hooks/useFetch";
 import Loading from "../../common/Loading/Loading";
 import ErrorMessage from "../../common/ErrorMessage/Error-message";
 import {NavLink} from "react-router-dom";
+import s from './PopularTags.module.css'
 
 const PopularTags = () => {
 
-    const [{response, isLoading, error}, doFetch] = useFetch('tags')
+    const [{response, isLoading, error}, doFetch] = useFetch('tags');
 
     useEffect(() => {
         doFetch()
@@ -19,11 +20,11 @@ const PopularTags = () => {
         return <ErrorMessage />
     }
 
-    return <div>
+    return <div className={s.PopularTags}>
         <p>Топ тэгов:</p>
-        <div>
+        <div className={s.grid}>
             {response.tags.map(tag => (
-                <NavLink to={`/tags/${tag}`} key={tag}>
+                <NavLink className={s.tag} to={`/tags/${tag}`} key={tag}>
                     {tag}
                 </NavLink>
             ))}

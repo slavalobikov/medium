@@ -20,7 +20,7 @@ const AddToFavorites = ({isFavoritted, favoritesCount, articleSlug}) => {
     };
 
     return <div className={s.like}>
-        <button /*className={s.flex || (isFavoritesCountWithResponse && s.dima)}*/
+        <button
             className={ cn({[s.flex]: true, [s.dima]: isFavoritesCountWithResponse
                 })}
              onClick={handdleLike}>

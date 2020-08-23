@@ -8,6 +8,7 @@ import PopularTags from "../../Components/PopularTags/PopularTags";
 import Loading from "../../common/Loading/Loading";
 import ErrorMessage from "../../common/ErrorMessage/Error-message";
 import FeedToggler from "../../Components/FeedToggle/FeedToggler";
+import s from "../globalFeed/GlobalFeed.module.css";
 
 const YourFeed = ({location, match}) => {
 
@@ -41,9 +42,11 @@ const YourFeed = ({location, match}) => {
                     url={currentUrl}
                     currentPage={currentPage}
                 />
+                <div className={s.grid}>
+                    <Feed articles={response.articles} pageSize={offset} response={response}  limit={limit} offset={offset} />
+                    <PopularTags />
+                </div>
 
-                <Feed articles={response.articles} pageSize={offset} response={response}  limit={limit} offset={offset} />
-                <PopularTags />
             </Fragment>
 
         )}
