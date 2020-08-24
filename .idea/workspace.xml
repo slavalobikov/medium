@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554e3c1b-2d13-4a0b-8535-3618f51f1826" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/FeedToggle/FeedToggler.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/PopularTags/PopularTags.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/CreateArtikle/ArticleForm.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddToFavorite/AddToFavorite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddToFavorite/AddToFavorite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Feed/Feed.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Feed/Feed.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/FeedToggle/FeedToggler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FeedToggle/FeedToggler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/PopularTags/PopularTags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PopularTags/PopularTags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/CreateArtikle/ArticleForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/CreateArtikle/ArticleForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/YourFeed/YourFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/YourFeed/YourFeed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/globalFeed/GlobalFeed.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +115,8 @@
       <workItem from="1597755418619" duration="3795000" />
       <workItem from="1598011112536" duration="2001000" />
       <workItem from="1598024140318" duration="8570000" />
-      <workItem from="1598213487838" duration="3611000" />
+      <workItem from="1598213487838" duration="4387000" />
+      <workItem from="1598298867060" duration="584000" />
     </task>
     <task id="LOCAL-00001" summary="Header adaptive">
       <created>1594213574535</created>
@@ -274,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598102793560</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="v1">
+      <created>1598217429009</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1598217429009</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +298,8 @@
     <MESSAGE value="Shop" />
     <MESSAGE value="paginator" />
     <MESSAGE value="likes" />
-    <option name="LAST_COMMIT_MESSAGE" value="likes" />
+    <MESSAGE value="v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594920479648">
@@ -311,14 +310,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1594203271754" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1598102791541">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1598217426135">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598102791541" />
-    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1598102271565">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598217426135" />
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1598298577368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598102271565" />
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598298577368" />
     <state x="564" y="263" width="261" height="201" key="Github.ShareDialog" timestamp="1594213470478">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -339,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594567253138" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1598103202859">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1598217432418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598103202859" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598217432418" />
     <state x="489" y="17" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597763806237">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
